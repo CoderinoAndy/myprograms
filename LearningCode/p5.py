@@ -12,4 +12,4 @@ while start < new_stop
         else:
             factor_count += 1
         start += 1
-print()
+print(f"{num} has {factor_count} factors.")
