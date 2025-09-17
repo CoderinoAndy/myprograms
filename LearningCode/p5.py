@@ -9,7 +9,8 @@ while start < new_stop
         dividend = num//start
         if start != dividend:
             factor_count += 2
+            print(f"{num} has ")
         else:
             factor_count += 1
-        start += 1
+    start += 1
 print(f"{num} has {factor_count} factors.")
