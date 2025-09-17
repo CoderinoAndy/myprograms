@@ -20,7 +20,7 @@ def main():
         except ValueError:
             print("Please enter a valid integer for each input!")
             continue
-        
+    
     FunFairCars(placeInLine, carAmount, carCapacity)
 
 main()
