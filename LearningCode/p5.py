@@ -1,3 +1,4 @@
+#Factor Counter
 import math
 start = 1
 num = int(input("Enter a value: "))
