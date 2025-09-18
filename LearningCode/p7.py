@@ -4,6 +4,8 @@ while(True):
     movement_amount = int(input("Movement: "))
     if 2 <= movement_amount <= 12:
         player_position += movement_amount
+    elif movement_amount == 0:
+        break
     else:
         print("Dude, two die don't make that amount.")
         continue
@@ -25,13 +27,8 @@ while(True):
         print("Haha loser you can't move.")
         player_position -= movement_amount
     elif player_position == 100:
-        print("YOU WINNN!!!")
-        playagain = input("play again? ")
-        if playagain.lower() == "yes":
-            player_position = 1
-            continue
-        else:
-            break
+        print("You win!")
+        break
     
     print(f"You are at {player_position}!")
 
