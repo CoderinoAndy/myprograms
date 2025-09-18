@@ -4,7 +4,7 @@ from random import choice #Choice is a function that randomly chooses from a lis
 
 balance = 1000
 
-while(True):
+while True:
     print("welcome to our heads or tails game")
 
     print(f"Your current balance is ${balance}$")
@@ -13,8 +13,9 @@ while(True):
         print("You don't have that much money!")
         continue
     print(f"You wagered {wager} dollars!!!")
+    
     print("Please choose either heads or tails!")
-    while(True):
+    while True:
         user_input = input("User's choice: ")
         user_input = user_input.lower()
         if user_input in {"heads", "tails", "head", "tail"}: #Checking if the user input is in this "set"
