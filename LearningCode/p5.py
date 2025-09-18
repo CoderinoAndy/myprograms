@@ -1,5 +1,4 @@
 import math
-
 start = 1
 num = int(input("Enter a value: "))
 factor_count = 0
