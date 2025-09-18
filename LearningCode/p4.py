@@ -1,3 +1,4 @@
+#Factor counter
 number = int(input())
 factor = 1
 factor_count = 1
