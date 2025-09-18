@@ -1,3 +1,4 @@
+#Donut shop
 def donutshop():
     donuts = int(input("Enter the amount of initial donuts: "))
     eventnumber = int(input("Enter the amount of events: "))
