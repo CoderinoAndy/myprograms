@@ -9,28 +9,22 @@ game_dict = {
     90 : 48,
     99 : 77,
 }
-# Key value correlations! Easy access easy life.
+# Key value correlations in a dict! Easy access easy life.
 
 while(True):
     movement_amount = int(input("Movement: "))
-    if 2 <= movement_amount <= 12:
-        player_position += movement_amount
-    elif movement_amount == 0:
+    if player_position + movement_amount == 100:
+        print(f"You are now on square {movement_amount + player_position}!")
+        print(f"You Win!")
         break
     else:
-        print("Dude, two die don't make that amount.")
-        continue
-        
-    if player_position in game_dict:
-        player_position = game_dict[player_position]
-
-    if player_position > 100:
-        print("Haha loser you can't move.")
-        player_position -= movement_amount
-    elif player_position == 100:
-        print("You win!")
-        break
+        player_position += movement_amount
+        if player_position in game_dict:
+            player_position = game_dict[player_position]
+        elif player_position > 100:
+            print("Haha loser you can't move.")
+            player_position -= movement_amount
     
-    print(f"You are at {player_position}!")
+    print(f"You are now at {player_position}!")
 
 
