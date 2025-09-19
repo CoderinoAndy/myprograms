@@ -1,5 +1,6 @@
 #Snakes and ladders
 player_position = 1
+
 game_dict = {
     9 : 34,
     40 : 64,
@@ -8,6 +9,7 @@ game_dict = {
     90 : 48,
     99 : 77,
 }
+# Key value correlations! Easy access easy life.
 
 while(True):
     movement_amount = int(input("Movement: "))
