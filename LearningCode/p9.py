@@ -15,7 +15,6 @@ SELECT * FROM products;
 """
 #Select all columns from products
 
-
 result = cursor.execute(query).fetchall()
 #We create a result that takes the value of our cursor executing our query
 #The dot fetchall pulls all result rows into a python list of tuples
