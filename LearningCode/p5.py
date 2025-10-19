@@ -4,6 +4,7 @@ start = 1
 num = int(input("Enter a value: "))
 factor_count = 0
 new_stop = int(math.sqrt(end)) + 1
+
 while start < new_stop
     if num % start == 0:
         dividend = num//start
@@ -14,4 +15,5 @@ while start < new_stop
             factor_count += 1
             print(f"{num} has {start} as a factor")
     start += 1
+    
 print(f"{num} has {factor_count} factors.")
