@@ -39,5 +39,3 @@ n = input("How many times to run: ")
 for x in range(n):
     code = input("Code: ")
     print(cleaner(code))
-
-        

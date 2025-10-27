@@ -93,9 +93,22 @@ while i < len(gibberish):
     i += 1
 
 # Remove all whitespaces from a string
-whitespacer = " AJAJAJ    JAJAJ   "
+whitespacer = " AJAJAJ    JAJAJ   " 
 whitespacer = whitespacer.replace(" ", "")
 
 # Sort a string in ASCII order or reverse-ASCII order
-sorted_string = skibidi.sort()
-sorted_
+bingbong = input("sorting your string in ASCII order: ")
+def sst(text):
+    if not text:
+        return ""
+    elif len(text) == 1:
+        return text
+    sorted_text = ""
+    while text:
+        smol = min(text)
+        howmany = text.count(smol)
+        sorted_text += smol*howmany
+        text = text.replace(smol, "")
+    return sorted_text
+
+    
