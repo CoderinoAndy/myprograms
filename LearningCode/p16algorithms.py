@@ -7,16 +7,16 @@ def select(a_list):
             smallest = a_list[i] # then prove it is or it is not
             # hunt
             j = i + 1 # search from i + 1
-            new_location = i # Initialize to i
+            new_low_location = i # Initialize to i
             while j < len(a_list):
                 new_value = a_list[j]
                 if new_value < smallest:
                     smallest = new_value
-                    new_location = j
+                    new_low_location = j
                 j += 1
             # endhunt
             # Swap smallest into proper location
-            a_list[i], a_list[new_location] = a_list[new_location], a_list[i]
+            a_list[i], a_list[new_low_location] = a_list[new_low_location], a_list[i]
             i += 1
 
 def bubble_sorter(arr):
