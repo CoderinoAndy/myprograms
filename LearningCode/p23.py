@@ -28,5 +28,3 @@ def bin_search(a_list, target):
             low = mid + 1
     return -1
 
-
-print(least_great_search([1, 2, 3, 6, 8, 5000], 7))
